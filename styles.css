@@ -1,0 +1,131 @@
+.attribution { 
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    background-color: hsl(158, 36%, 37%);
+    padding: 5px;
+    color: white; 
+    border-radius: 5px;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: grid;
+    place-content: center;
+}
+.card{
+  background-color: white;
+  margin: 0.8em;
+  width: 360px;
+  border-radius: 12px;
+}
+.pImage{
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+    height: auto;
+}
+.pImage2{
+    display: none;
+}
+p{
+    font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  line-height:1.5;
+}
+.pType{
+  letter-spacing: 5px;
+  margin-top: 0;
+}
+h1{
+  margin-top:0;
+  margin-bottom:0;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+  font-size: 2.2rem;
+  line-height: 1;
+}
+.des{
+    padding: 1.4em;
+}
+.pDes{
+    padding: 5px 20px 0 0;
+    text-align: start;
+    margin-bottom: 0px;
+}
+
+.price{
+    display: flex;
+}
+.price h2{
+    font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.price p{
+    margin: auto 0 auto 20px;
+    text-decoration: line-through;
+}
+
+button{
+    display: flex;
+    place-content: center;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    box-shadow: none;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsl(158, 36%, 16%);
+}
+button img{
+    width: 6%;
+    margin: auto 0;
+}
+button p{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+    margin: auto 10px;
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 700px){
+    body{
+        height: 100vh;
+    }
+    .card{
+        display: flex;
+        width: 600px;
+    }
+    .pImage{
+        display: none;
+    }
+    .pImage2{
+        display: inline;
+        width: 48%;
+        height: auto;
+        border-radius: 12px 0 0 12px;
+    }
+    .des{
+        padding: 2em;
+    }
+    button p{
+        font-size: 14px;
+    }
+    button img{
+        width: 7%;
+    }
+    .attribution{
+        font-size: 14px;
+    }
+}
